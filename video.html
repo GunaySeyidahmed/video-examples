@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+<div class="hero">
+    <div class="hero-content">
+        <video autoplay loop muted class="hero-video">
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text">
+            <h1>John Doe</h1>
+            <p>The best guitar teacher on the web!</p>
+            <a href="#">Let's learn together</a>
+        </div>
+        <a href="#intro" class="more round-btn"><i class="fa fa-chevron-down"></i></a>
+    </div>
+</div>
+<div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium itaque nisi numquam
+        rerum ut. Ad asperiores cupiditate dolorem excepturi explicabo harum in modi nam omnis quam!
+        Aperiam asperiores assumenda autem blanditiis consequuntur cupiditate deleniti dolorem dolorum
+        ducimus eius ex excepturi exercitationem facere ipsa iure laborum maiores, minus neque nihil
+        obcaecati odit quis repellat sapiente suscipit tempore voluptate voluptates? Beatae dolores eum
+        excepturi, id illo iste maxime nesciunt obcaecati officia qui, quo recusandae saepe voluptatum!
+        Aliquid asperiores aspernatur at beatae blanditiis commodi consequatur deleniti dicta dolorem
+        dolores ea et eum eveniet fuga, hic illum ipsa, iste magni optio pariatur provident quae quia
+        quidem saepe sunt tempora temporibus veniam vero voluptates voluptatum. Aliquam asperiores
+        blanditiis dicta eligendi iste laborum maiores molestiae nostrum omnis sunt? Adipisci asperiores
+        fugiat ipsum porro vero. Consectetur distinctio doloremque, fuga laudantium modi suscipit ullam
+        vitae voluptatum? Asperiores dolorum eius in! Consequuntur dignissimos ea, laboriosam magnam
+        nostrum odio quod reprehenderit rerum tempore, ullam vel vero? Aperiam, architecto asperiores
+        corporis dolore doloribus eveniet in itaque molestiae nam natus nesciunt, nobis officia quisquam
+        quo veritatis, vero voluptas. Ad adipisci consequuntur cum debitis deleniti distinctio ducimus
+        earum eligendi eos est exercitationem expedita fuga fugit illo ipsam labore laboriosam modi nam
+        nisi nostrum perspiciatis placeat possimus quas qui quidem rerum sed sunt suscipit totam unde,
+        velit vero voluptas voluptatibus. Ad consequatur esse in iure quia recusandae sapiente tenetur
+        voluptate! Hic quibusdam, unde. Accusamus alias, asperiores consectetur cupiditate facere id
+        illo inventore molestias, nobis placeat
+        quae quasi quidem ullam. Dolorem explicabo modi nemo possimus quam quas quo recusandae voluptas!</p>
+</div>
+<section id="testimonials">
+    <h2>Student <span>Testimonials</span></h2>
+
+    <div class="video-overlay">
+        <video id="small-video" autoplay loop muted >
+            <source src="movie.mp4" type="video/webm"/>
+            <source src="movie.mp4" type="video/mp4"/>
+            Your browser does not support the HTML5 video tag.
+        </video>
+        <div class="overlay">
+            <blockquote>
+                <p>At half-past twelve the travellers caught sight for an instant of Fort Halleck, which commands that section; and in a few more hours the Rocky Mountains were crossed. <span>There was reason to hope, then, that no accident would mark the journey through this difficult country. The snow had ceased falling, and the air became crisp and cold. Large birds, frightened by the locomotive, rose and flew off in the distance. No wild beast appeared on the plain. It was a desert in its vast nakedness.</span></p>
+                <footer><cite>Jules Verne</cite></footer>
+            </blockquote>
+            <button id="play-btn" class="round-btn"><i class="fa fa-pause"></i></button>
+        </div>
+    </div>
+</section>
+<script>
+    (function()
+    {
+        var video = document.getElementById("small-video"),
+            play  = document.getElementById("play-btn");
+
+        play.addEventListener( "click", function(e)
+        {
+            e.preventDefault();
+            if (video.paused)
+            {
+                video.play();
+                play.innerHTML = "<i class='fa fa-pause'></i>";
+            }
+            else
+            {
+                video.pause();
+                play.innerHTML = "<i class='fa fa-play'></i>";
+            }
+        });
+    })();
+</script>
+</body>
+</html>

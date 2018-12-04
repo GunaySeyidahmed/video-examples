@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 48px;
+}
+.hero-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    background: url(400.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.hero-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.more{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    }
+.round-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+
+/*2 video*/
+.video-overlay
+{
+    position: relative;
+}
+
+#small-video
+{
+    width: 100%;
+    height: auto;
+    background: url(400.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#play-btn
+{
+    position: absolute;
+    bottom: 36px;
+    right: 36px;
+
+    background: transparent;
+}
+
+.overlay
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    overflow: hidden;
+}
+
+.overlay blockquote
+{
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    font-style: italic;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.overlay blockquote cite
+{
+    color: #2196F3;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+}
